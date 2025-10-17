@@ -11,8 +11,8 @@ android {
         applicationId = "com.stoneparks.btprint"
         minSdk = 24
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "1.1"
     }
 
     buildTypes {
@@ -35,4 +35,6 @@ dependencies {
     implementation("com.google.android.material:material:1.12.0")
     implementation("androidx.activity:activity-ktx:1.9.2")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.work:work-runtime-ktx:2.9.1")
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
 }

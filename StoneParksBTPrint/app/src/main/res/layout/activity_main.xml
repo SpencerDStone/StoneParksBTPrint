@@ -45,5 +45,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp" />
+
+    <EditText
+        android:id="@+id/etWebhook"
+        android:hint="@string/webhook_hint"
+        android:inputType="textUri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnSaveWebhook"
+        android:text="Save Webhook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
 </LinearLayout>
 </ScrollView>

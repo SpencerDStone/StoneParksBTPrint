@@ -1,15 +1,9 @@
-# StoneParks BT Print (Android)
-Print CPCL tickets to a Zebra ZQ511 over classic Bluetooth (SPP). Works offline.
+# StoneParks BT Print (Android) — v1.1
+- Direct Bluetooth SPP printing to Zebra ZQ511 (offline).
+- Optional webhook: queued via WorkManager and posted when online.
 
 ## Build
-1. Open this folder in **Android Studio** → *Open an Existing Project*.
-2. Let it sync Gradle (Kotlin 1.9.24, AGP 8.5.2, compileSdk 34).
-3. Pair ZQ511 in Android Bluetooth settings.
-4. Run on device.
+Open in Android Studio, let Gradle sync, pair ZQ511, run.
 
-## Use
-- Tap **Select ZQ511** (picks a bonded device; prefers names containing "ZQ511").
-- Enter ticket fields, tap **Print Ticket**.
-
-## Customize
-- Edit `buildCpcl()` in `MainActivity.kt` to change label layout or switch to ZPL.
+## Webhook
+Enter URL in the field and tap **Save Webhook**. After printing, a job will POST the ticket JSON to your URL when network is available (auto-retry).
