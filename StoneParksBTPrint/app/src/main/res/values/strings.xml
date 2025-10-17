@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">StoneParks BT Print</string>
+    <string name="select_printer">Select ZQ511</string>
+    <string name="print_ticket">Print Ticket</string>
+</resources>
